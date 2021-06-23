@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List with AJAX</title>
+    <link rel="stylesheet" href="tailwind.css"/>
+    <script src="index.js" defer type="module"></script>
+</head>
+<body style="height: 100%; width: 100%" class="bg-black">
+    <div class="p-12">
+        <div class="mx-auto bg-gray-900 p-6 rounded-lg border-gray-700 border-2 max-w-3xl space-y-4 text-gray-300">
+            <p class="text-4xl font-medium">
+                Student List with AJAX
+            </p>
+            <form class="flex flex-col space-y-4">
+                <div class="space-y-2">
+                    <div class="flex justify-between">
+                        <label for="firstName">
+                            First name:
+                        </label>
+                        <input id="firstName" style="width: 80%" class="rounded border-gray-500 border px-2 py-1 bg-gray-900">
+                    </div>
+
+                    <div class="flex justify-between">
+                        <label for="lastName">
+                            First name:
+                        </label>
+                        <input id="lastName" style="width: 80%" class="rounded border-gray-500 border px-2 py-1 bg-gray-900">
+                    </div>
+
+                    <div class="flex justify-between">
+                        <label for="emailAddress">
+                            Email:
+                        </label>
+                        <input id="emailAddress" style="width: 80%" class="rounded border-gray-500 border px-2 py-1 bg-gray-900">
+                    </div>
+                </div>
+                <div class="self-end">
+                    <button class="rounded border p-1 border-gray-500 border-2 px-4 py-1" type="reset">
+                        Clear form
+                    </button>
+                    <button class="bg-blue-700 p-1 rounded text-white px-4 py-1" id="addBtn">
+                        Add student
+                    </button>
+                </div>
+            </form>
+            <div id="elements" class="grid grid-cols-3 gap-4">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
